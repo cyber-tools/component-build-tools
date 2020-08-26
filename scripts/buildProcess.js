@@ -8,7 +8,7 @@ const runtimeBabelConfig = require("@/configs/runtimeBabelConfig");
 const output = path.join(process.cwd(), "./dist/");
 
 
-module.exports = function buildScript() {
+module.exports = async function buildProcess() {
   const tsProject = typescript.createProject("tsconfig.json");
   const gulpMatch = tsProject.src();
   const tsTask = gulpMatch.pipe(tsProject());

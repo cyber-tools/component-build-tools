@@ -3,7 +3,7 @@
 const gulp = require("gulp");
 const buildProcess = require("@/scripts/buildProcess");
 
-module.exports = () => {
+module.exports = async () => {
   gulp.task("build", buildProcess);
-  gulp.task("build").apply(gulp);
+  await gulp.task("build").apply(gulp);
 };
