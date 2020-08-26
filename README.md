@@ -5,6 +5,7 @@
   基于babel的编译typescript组件库的构筑脚本
 </div>
 <h2 align="center">快速开始</h2>
+
 ```bash
 npm install @cyber-tools/component-build-tools -g
 ```
