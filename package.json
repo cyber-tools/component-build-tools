@@ -1,7 +1,7 @@
 {
   "name": "@cyber-tools/component-build-tools",
   "version": "1.0.2",
-  "description": "用于创建cyber系列工具的命令行工具",
+  "description": "基于gulp,babel,typescript开发的组件库构筑工具",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

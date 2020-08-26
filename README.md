@@ -2,7 +2,7 @@
   @cyber-tools/component-build-tools
 </h2>
 <div align="center">
-  基于babel的编译typescript组件库的构筑脚本
+  基于gulp babel typescript开发的组件库构筑工具
 </div>
 <h2 align="center">快速开始</h2>
 
