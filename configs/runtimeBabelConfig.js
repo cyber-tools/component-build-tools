@@ -10,6 +10,7 @@ module.exports = {
       "extensions": ["png", "jpg", "jpeg", "gif", "svg"]
     }],
     [require.resolve("babel-plugin-css-modules-transform"), {
+      "devMode": true,
       "keepImport": true,
       "extensions": [".less"],
       "generateScopedName": "[name]__[local]___[hash:8]",

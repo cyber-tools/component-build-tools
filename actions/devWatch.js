@@ -2,14 +2,15 @@
 // https://github.com/ant-design/antd-tools/blob/master/lib/cli/run.js
 const gulp = require("gulp");
 const path = require("path");
-const watch = require("watch");
+const watch = require("gulp-watch");
 const buildProcess = require("@/scripts/buildProcess");
 
-module.exports = () => {
-  const watchPath = path.resolve(process.cwd(), "./src/");
-  async function developmentTask() {
-    gulp.task("build", buildProcess);
-    await gulp.task("build").apply(gulp);
-  };
-  watch.watchTree(watchPath, developmentTask);
+module.exports = async () => {
+  gulp.task("start:build", buildProcess);
+  gulp.task("watch:dev", function () {
+    const watchPath = path.resolve(process.cwd(), "./src/**/*");
+    return watch(watchPath, buildProcess);
+  });
+  await gulp.task("start:build").apply(gulp);
+  await gulp.task("watch:dev").apply(gulp);
 };
