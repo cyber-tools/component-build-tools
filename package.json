@@ -28,6 +28,7 @@
     "gulp-watch": "^5.0.1",
     "inquirer": "^7.3.3",
     "jsonfile": "^6.0.1",
+    "merge2": "^1.4.1",
     "module-alias": "^2.2.2",
     "ora": "^4.0.5"
   },
